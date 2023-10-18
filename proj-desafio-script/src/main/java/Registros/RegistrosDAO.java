@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class RegistrosDAO {
      public static boolean cadastrarComputador(RegistrosPC registros) {
-         String sql = "INSERT INTO registroMaquina (usoRam, usoProc, usoDisco, dispositivosUSB) VALUES (?,?,?,?,?)";
+         String sql = "INSERT INTO registroMaquina (usoRam, usoProc, usoDisco, dispositivosUSB) VALUES (?,?,?,?)";
          PreparedStatement ps = null;
          try {
              ps = Conexao.getConexao().prepareStatement(sql);
