@@ -36,7 +36,7 @@ public class App {
         Processador processador = looca.getProcessador();
         Long memoriaUso = memoria.getEmUso();
         Long usoDisco = disco.getTamanhoTotal();
-        Long redeDownload = looca.getRede().getGrupoDeInterfaces().getInterfaces().get(3).getBytesRecebidos()/5;
+        // Long redeDownload = looca.getRede().getGrupoDeInterfaces().getInterfaces().get(3).getBytesRecebidos()/5;
         int usbConectados = looca.getDispositivosUsbGrupo().getDispositivosUsbConectados().size()-1;
 
 
@@ -44,7 +44,7 @@ public class App {
         registros.setMemoriaUso(memoriaUso);
         registros.setUsoProcessador(processador.getUso());
         registros.setDiscoUso(usoDisco);
-        registros.setDownloadRede(redeDownload);
+        // registros.setDownloadRede(redeDownload);
         registros.setDispositivosUSB(usbConectados);
 
         if (timer == null) {
